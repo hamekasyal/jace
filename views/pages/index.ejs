@@ -8,7 +8,21 @@
 
   <% include ../partials/nav.ejs %>
 
-
+<div class="form-style-8">
+<h2><center>Create a Post on the STEEM Blockchain</center></h2>
+<form>
+<input type="text" id="account" onkeyup="return forceLower(this);" placeholder="Account (e.g. fbslo)" />
+    <input type="text" id="key" placeholder="Private Posting Key" />
+    <input type="text" id="permlink" placeholder="Unique Permlink (e.g. my-post-title)" />
+    <input type="text" id="title" placeholder="Title" />
+    <textarea placeholder="Post Content (Markdown/HTML)" onkeyup="adjust_textarea(this)" id='article'></textarea>
+    <input type="text" id="tag1" placeholder="Tag 1 (Must start with a letter, only lowercase letters )" />
+    <input type="text" id="tag2" placeholder="Tag 2 (Must start with a letter, only lowercase letters )" />
+    <input type="text" id="tag3" placeholder="Tag 3 (Must start with a letter, only lowercase letters )" />
+    <input type="text" id="tag4" placeholder="Tag 4 (Must start with a letter, only lowercase letters )" />
+    <input type="text" id="tag5" placeholder="Tag 5 (Must start with a letter, only lowercase letters )" />
+<center><input type="button" value="POST" onClick='postArticle()'/></center>
+</form></div>
 
 
 </body>
