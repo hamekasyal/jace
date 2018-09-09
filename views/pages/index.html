@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <html>
+<body>
+<script>
+function process()
+{
+var url="https://v2.steemconnect.com/sign/delegateVestingShares?delegator=" + document.getElementById("url").value +"&delegatee="+ document.getElementById("url1").value +"&vesting_shares="+document.getElementById("steempower").value +"%20SP";
+location.href=url;
+return false;
+}
+</script>
+<form onSubmit="return process();">
+
+<table>
+<tr>
+	<td>Enter Steemit Username:</td>
+	<td>:</td>
+	<td><input type="text" name="url" id="url"></td>
+</tr>
+<tr>
+	<td>to Username</td>
+	<td>:</td>
+	<td><input type="text" name="url1" id="url1"></td>
+</tr>
+<tr>
+	<td>jumlah</td>
+	<td>:</td>
+	<td><input type="text" name="steempower" id="steempower"></td>
+</tr>
+</table>
+
+ <input type="submit" value="Delegate Now">
+<br>
+
+<br>
+ 
+<br>
+
+
+</center>
+</form>
+<hr>
+</body> 
+</html>
+ </body>
+</html>
